@@ -1,13 +1,14 @@
 //liste nomi e cognomi
 const listaNomi = ["mario", "pino", "ennio", "giovanna", "maria", "antonella", "valerio", "leonardo", "riccardo", "master", "giulia", "salvatore", "pietro", "elisa", "lorenzo", "kid", "anna"];
-const listaCognomi = ["piu", "scotto", "annio", "hardcore", "gelmini", "elia", "mio padre", "tartaruga", "carluccio", "yi", "corrado", "molto bono", "palermo", "silent", "porro", "kudi", "pepe"];
+const listaCognomi = ["piu", "scotto", "annio", "hardcore", "gelmini", "elia", "mio padre", "tartaruga", "carluccio", "yi", "corrado", "bono", "leone", "silent", "porrega", "kudi", "pepe"];
 
 //lunghezza for selezionato dall'utente
 
 //numero dado randomico
 const btnLista = document.querySelector(".confermaNum");
 btnLista.addEventListener("click", function () {
-
+      const list = document.querySelector(".list-group");
+        list.innerHTML="";
     const numerInputElement = document.querySelector("[id=numeroInput]");
 
     for ( let i = 1 ; i <= numerInputElement.value ; i++){
@@ -23,8 +24,8 @@ btnLista.addEventListener("click", function () {
 
     let nomeCognome = ( nomeVisualizzato +" "+ cognomeVisualizzato )
 
-    const list = document.querySelector(".list-group");
 
+        
         list.innerHTML += `<li class="list-group-item">
     <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
     <label class="form-check-label" for="firstCheckbox">${nomeCognome}</label>
