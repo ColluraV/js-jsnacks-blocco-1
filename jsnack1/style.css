@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+.container{
+    min-height: 100vh;
+    background-image:url("https://png.pngtree.com/background/20210711/original/pngtree-plane-wooden-texture-background-with-plane-wood-picture-image_1162099.jpg");
+
+}
+body{
+    background-color: rgb(39, 39, 39);
+}
