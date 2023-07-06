@@ -31,5 +31,6 @@ btnSomma.addEventListener("click", function () {
         }
         console.log(somma);
 
+        document.getElementById("risultato").innerHTML = (somma) ;
 
 })
